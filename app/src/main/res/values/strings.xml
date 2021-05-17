@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Birthday Application</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="create_greeting">create greeting</string>
+    <string name="name">Name</string>
+    <string name="welcome">welcome</string>
+    <string name="click">Button</string>
+    <string name="happy_birthday">Happy Birthday</string>
+    <string name="pic_your_side">Pic Your Side</string>
+</resources>
