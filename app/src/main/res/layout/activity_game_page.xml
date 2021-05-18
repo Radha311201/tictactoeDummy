@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".gamePage">
 
 
@@ -15,115 +16,143 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/grid" />
-    <Button
+        app:layout_constraintVertical_bias="0.617"
+        app:srcCompat="@drawable/gridnew" />
+
+    <ImageButton
         android:id="@+id/gridButton_1"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
 
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.067"
-        android:backgroundTint="@color/white" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ImageButton
         android:id="@+id/gridButton_2"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
 
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        android:backgroundTint="@color/white" />
+        />
 
-    <Button
+    <ImageButton
         android:id="@+id/gridButton_3"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
 
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.903"
-        android:backgroundTint="@color/white" />
-    <Button
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
         android:id="@+id/gridButton_4"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
 
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.067"
-        android:backgroundTint="@color/white" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ImageButton
         android:id="@+id/gridButton_5"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
-
+        android:layout_width="82dp"
+        android:layout_height="81dp"
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        android:backgroundTint="@color/white"/>
-    <Button
+        app:rippleColor="#2D2F31" />
+
+
+    <ImageButton
         android:id="@+id/gridButton_6"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
-
+        android:layout_width="82dp"
+        android:layout_height="81dp"
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.903"
-        android:backgroundTint="@color/white" />
-    <Button
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
         android:id="@+id/gridButton_7"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
 
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.067"
-        android:backgroundTint="@color/white" />
-    <Button
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
         android:id="@+id/gridButton_8"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
 
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        android:backgroundTint="@color/white" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
-
-    <Button
+    <ImageButton
         android:id="@+id/gridButton_9"
-        android:layout_width="66dp"
-        android:layout_height="49dp"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
 
+        android:background="#0B0B0B"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.903"
-        android:backgroundTint="@color/white" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="174dp"
+        android:layout_height="60dp"
+
+        android:textColor="#FCF200"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

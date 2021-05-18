@@ -38,7 +38,7 @@
         android:fontFamily="@font/new_rocker"
         android:text="@string/pic_your_side"
 
-        android:textColor="#0C0C0C"
+        android:textColor="#2B2B2B"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

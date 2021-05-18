@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBirthdayApplication">
-        <activity android:name=".ChooseSymbol"></activity>
+        <activity android:name=".resultPage"></activity>
+        <activity android:name=".Result" />
+        <activity android:name=".result" />
+        <activity android:name=".tossPage" />
+        <activity android:name=".ChooseSymbol" />
         <activity android:name=".gamePage" />
         <activity android:name=".BirthdayGreetingActivity" />
         <activity android:name=".MainActivity">

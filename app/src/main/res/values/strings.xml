@@ -7,4 +7,7 @@
     <string name="click">Button</string>
     <string name="happy_birthday">Happy Birthday</string>
     <string name="pic_your_side">Pic Your Side</string>
+    <string name="lets_have_a_toss">Lets have a toss</string>
+    <string name="and_the_winner_of_the_match_is">And the Winner of the Match is</string>
+    <string name="rematch">Rematch</string>
 </resources>

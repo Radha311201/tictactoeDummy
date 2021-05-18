@@ -26,8 +26,7 @@ class BirthdayGreetingActivity : AppCompatActivity() {
                 state_button.setBackgroundResource(R.drawable.cupbg)
             }
         }
-        val intent = Intent(this,gamePage::class.java)
-        startActivity(intent)
+
     }
 
 
