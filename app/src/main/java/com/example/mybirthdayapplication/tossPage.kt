@@ -31,12 +31,12 @@ class tossPage : AppCompatActivity() {
                 if(x == 1) {
                     state_text.text = "Player 1"
                     WINNER = "Player 1"
-                   // LOOSER = "Player 2"
+                    LOOSER = "Player 2"
                 }
                 else if(x == 2){
                     state_text.text = "Player 2"
                     WINNER = "Player 2"
-                   // LOOSER = "Player 1"
+                    LOOSER = "Player 1"
                 }
             }
             winner_name.text = " $WINNER won the toss "
@@ -53,9 +53,8 @@ class tossPage : AppCompatActivity() {
     fun startGame(view: View) {
         val intent = Intent(this,gamePage::class.java)
         //intent.putExtra(resultPage.RESULT,WINNER)
-        intent.putExtra(gamePage.TOSS_LOOSER,LOOSER)
+        //intent.putExtra(gamePage.TOSS_LOOSER,LOOSER)
         intent.putExtra(gamePage.TOSS_WINNER,WINNER)
-
         startActivity(intent)
     }
 

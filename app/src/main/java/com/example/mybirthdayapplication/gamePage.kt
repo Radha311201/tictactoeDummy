@@ -19,12 +19,22 @@ class gamePage : AppCompatActivity() {
         const val TOSS_WINNER = ""
         const val TOSS_LOOSER = ""
     }
+    var countOfXO = 0
+    var toss_win = ""
+    var toss_los = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_page)
+
         val tossWinner = intent.getStringExtra(TOSS_WINNER)
+       // val tossLooser = intent.getStringExtra(TOSS_LOOSER)
+        if (tossWinner != null) {
+            toss_win = tossWinner
+        }
+
+
         player_name.text = "$tossWinner make first move"
-       // val tossLooser  = intent.getStringExtra(TOSS_LOOSER)
+
 
         val gridButton1 = findViewById(R.id.gridButton_1) as ImageButton
         val gridButton2 = findViewById(R.id.gridButton_2) as ImageButton
@@ -35,7 +45,7 @@ class gamePage : AppCompatActivity() {
         val gridButton7 = findViewById(R.id.gridButton_7) as ImageButton
         val gridButton8 = findViewById(R.id.gridButton_8) as ImageButton
         val gridButton9 = findViewById(R.id.gridButton_9) as ImageButton
-        var countOfXO = 0
+
         gridButton1.setOnClickListener {
 
             Toast.makeText(this, "button is clicked", Toast.LENGTH_LONG).show()
@@ -259,16 +269,28 @@ class gamePage : AppCompatActivity() {
     }
     fun sendResult(){
         val intent = Intent(this,resultPage::class.java)
+        //val tossLooser = intent.getStringExtra(TOSS_LOOSER)
 //        val tossLooser  = intent.getStringExtra(TOSS_LOOSER)
 //        val tossW = intent.getStringExtra(TOSS_WINNER)
-        if(count>9){
-            intent.putExtra(resultPage.RESULT,"Draw")
-        }
-        else if(count%2==0){
-            intent.putExtra(resultPage.RESULT, "Player 2")
+        var temp = ""
+        var flag = 0
+        if(toss_win == "Player 1"){
+            temp = "Player 2"
         }
         else{
-            intent.putExtra(resultPage.RESULT, "Player 1")
+            temp = "Player 1"
+        }
+
+        if(countOfXO%2==0){
+            flag = 1
+            intent.putExtra(resultPage.RESULT, temp)
+        }
+        else if(countOfXO%2!=0){
+            flag = 1
+            intent.putExtra(resultPage.RESULT, toss_win)
+        }
+        else {
+            intent.putExtra(resultPage.RESULT,"Draw")
         }
         startActivity(intent)
     }
@@ -277,7 +299,7 @@ class gamePage : AppCompatActivity() {
         if(matrix[0][0]==matrix[1][1]&&matrix[1][1]==matrix[2][2]&&matrix[0][0]!='_'){
             return true
         }
-        else if(matrix[0][2]==matrix[1][1]&&matrix[1][1]==matrix[2][0]&&matrix[1][0]!='_'){
+        else if(matrix[0][2]==matrix[1][1]&&matrix[1][1]==matrix[2][0]&&matrix[2][0]!='_'){
             return true
         }
 
